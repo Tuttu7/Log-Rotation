@@ -106,7 +106,7 @@ missingok - If the log file is missing, go on to the next one without issuing an
 
 delaycompress - Postpone compression of the previous log file to the next rotation cycle. This only has effect when used in combination with compress. It can be used when some program cannot be told to close its logfile and thus might continue writing to the previous log file for some time.
 
-The lines between postrotate and endscript (both of which must appear on lines by themselves) are executed (using /bin/sh) after the log file is rotated.
+postrotate - The lines between postrotate and endscript (both of which must appear on lines by themselves) are executed (using /bin/sh) after the log file is rotated.
 ```
 
  #### Excecuting a dry run of a specific service log configuation file 
